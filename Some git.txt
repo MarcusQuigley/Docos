@@ -1,0 +1,66 @@
+When dealing with a git command always ask the following questions
+ How does this command move information across the four areas? And, how does it impact the repository?  
+git add // moves files to staging, but doesnt change repo
+git commit // staging file is moved to repo. made a new commit in repo, updated current branch
+git checkout // changes branch (by moving head and current commit) and moves new commit to staging and working area 
+
+Git reset..
+reset moves a branch -> it changes head in repo
+reset moves files from repo to stagin and working areas based if its
+ --hard copies commit files to staging and working area
+, --soft copies commit files to working area
+ --mixed (default) copies commit files to  staging area
+
+git reset sha1. //moves head to specific commit 
+git reset head {filename} // doesnt move branch! moves files to staging area. (notice its default)
+//adding repo to remote
+git remote add origin remote repository URL
+
+// pushes new branch to remote
+git push -u origin BRANCH
+//set tracking information for this branch git
+git branch --set-upstream-to=origin/master master
+
+git branch sha //createa detached head
+git rebase master
+
+merging vs rebase
+merge: history is preserved. history gets cluttered in large projects
+git checkout master
+git merge ..branch
+rebase: refactors history to make it nice to look at. creates new commits and destroys old ones. Dates in log can be out of sync.
+git checkout ..branch
+git rebase master
+
+
+git pull origin master
+VIEW HISTORY 
+git diff --cached
+git log --graph --decorate --oneline
+git show 6481fy
+git show Head^^
+git show Head~2
+git show Head@{"1 month ago"}
+git blame ..some file
+git diff head head~2 (2 commits)
+FIXING  HISTORY 
+git commit --amend
+git rebase -i ..a commit
+//reference log 
+git reflog ..a commit //can show any commit even if deleted 
+git revert ..a commit//creates a new commit thats complete opposite of ..a commits changes
+
+
+git cat-file Sha -p//prints out commit blob
+.git objects folder contains commits. 
+.git refs folder contains branches,tags 
+.git merge folders appear during a merge
+git head file contains pointer to branch in refs folder which is checked out 
+git checkout //move head and update  working area
+
+
+Injectables perform actual work, talk to external systems or to other injectables. Can be created using IOC
+ 
+Newables hold state (data) and potentially perform work on this data (exclusively). Need to be created with the new keyword
+
+in mocking using It.IsAny<string>().... means you dont care if the passed in values are correct

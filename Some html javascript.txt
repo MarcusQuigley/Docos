@@ -1,0 +1,82 @@
+const form = document.getElementById("task-form");	gets element by id
+const cardDiv = document.querySelector('.card');	gets first element that matches selector(here className)
+const list= document.querySelectorAll('.collection'); 	gets list of elements of element that matches selector(here className)
+
+
+form.addEventListener('submit', addTask);		adds delegate to event;
+document.addEventListener('DOMContentLoaded', BookStorage.displayBooks());
+
+
+const li = document.createElement('li');		creates element
+li.innerHTML = '<i class="fa fa-remove"></i>';		adds inner html to element
+li.appendChild(document.createTextNode(value));		adds element to end of current element
+cardDiv.insertBefore(errorDiv,heading);			adds element before specific element
+var parent = e.target.parentElement;			gets parent of element
+
+setTimeout(clearError, 3000);				fires method after delegate
+
+const taskItems = document.querySelectorAll('.collection-item') _
+	.forEach(function(task){ _			goes thru each item in element collection
+ var text = task.firstChild.textContent;		geys text of first element of element
+ task.style.display='block';      			sets style value of element
+
+
+document.querySelector('.alert').remove();		removes element called with className of  'alert'
+
+
+localStorage.setItem('tasks',JSON.stringify(tasks));	converts object to JSON and adds to localstorage
+ tasks = JSON.parse(localStorage.getItem('tasks'));     gets item from localstorage and converts from JSON
+
+ tasks.removeChild(taskList.firstChild);		removes element from collection..
+
+parseInt(element.value)					converts value to int
+element.textContent					adds text to element
+
+
+Styles
+style.color
+ .bordercolor
+ .display
+
+
+typeof 
+x is instanceof SomeClass
+
+static addNumbers(x,y) 					static method.
+
+AJAx:
+XMLHttpRequest
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+	Application Domains
+	Assemblies
+	Value types
+	Reference types
+	Lots of demos using the debuggers to introspect on the state of the CLR
+
+
+
+//only seem to need this for x64 apps not x86
+sxe ld clrjit //basically loads clrjit on first exception
+.g //starts running
+.loadby sos clr //load clr
+~0s // moves to default thread
+// then run first command twice
+
+!DumpHeap //walks entire managed heap and displays every object instance
+ntdll!NtTerminateProcess+0xc -- right before the app exits
+.restart //restarts app
