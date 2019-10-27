@@ -58,7 +58,6 @@ git cat-file Sha -p//prints out commit blob
 git head file contains pointer to branch in refs folder which is checked out 
 git checkout //move head and update  working area
 
-
 Injectables perform actual work, talk to external systems or to other injectables. Can be created using IOC
  
 Newables hold state (data) and potentially perform work on this data (exclusively). Need to be created with the new keyword
