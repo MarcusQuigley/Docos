@@ -1,0 +1,9 @@
+Rabbit MQ commands
+rabbitmq-plugins enable rabbitmq_management // enables dashboard ui
+Then login <guest,guest>
+<server name> start_app
+<> stop_app
+<> reset //clears out queues/exchanges
+<> add_user test testpwd
+<> set_user_tags test administrator //sets a tag for test user
+<> set_permissions -p / test ".*" ".*" ".*" //sets read/write permissions for test
